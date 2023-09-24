@@ -1,7 +1,7 @@
 import React from 'react'
 import BotCollectionDatas from '../pages/BotCollectionDatas'
 
-function BotCollection({botsList, botsArmy}) {
+function BotCollection({botsList}) {
   return (
     <div className="bot-container">
         <h2 style={{textAlign:'left', paddingLeft:"20px"}}>Bots collection:</h2>

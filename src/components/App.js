@@ -14,9 +14,10 @@ const[botsArmy, setBotsArmy] = useState([])
       .then(data => setBotsList(data))
   }, []);
 
-function addBot(id){
-  const newBot = botsList.find(bot => bot.id === id)
-  setBotsArmy([...botsArmy, newBot])
+const addBot = (bot) => {
+  if(!botsArmy.includes(bot)){
+    setBotsArmy([...botsArmy, bot])
+  }
 }
 
 
@@ -25,9 +26,9 @@ function addBot(id){
 
   return (
     <div className="App">
-      <YourBotArmy botsList={botsList} botsArmy={botsArmy}/>
+      <YourBotArmy botsList={botsList} botsArmy={botsArmy} />
 
-      <BotCollection botsList={botsList} />   
+      <BotCollection botsList={botsList} addBot={addBot}/>   
  
     </div>
   );

@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 
 function BotCollectionDatas({bots}) {
 
-// const [isClicked, setIsClicked] = useState(false)
-const{id, name, health,avatar_url,catchphrase, damage, armor,bot_class,created_at,updated_at} = bots
+
+const{name, health,avatar_url,catchphrase, damage, armor,bot_class,created_at,updated_at} = bots
 
 
   return (

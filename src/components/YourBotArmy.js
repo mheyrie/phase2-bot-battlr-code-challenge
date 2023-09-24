@@ -1,7 +1,7 @@
 import React from 'react'
 import BotCollectionDatas from '../pages/BotCollectionDatas'
 
-function YourBotArmy({botsArmy}) {
+function YourBotArmy({botsArmy, addBot}) {
   return (
     <div className="army-container">
       <h2>Bot Army:</h2>
