@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bot-card{
+  border: 2px solid grey;
+  box-shadow: 0 0 4px grey;
+  width: 300px;
+  margin: 20px;
+  background-color: plum;
+}
+
+.bot-img img{
+  width: 200px;
+  height: 200px;
+}
+
+.cards-display{
+  width: 50%;
+  text-align: center;
+  margin-left: 10px;
+}
+.cards-display > .bot-card{
+  display: inline-block;
+}

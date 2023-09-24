@@ -9,21 +9,26 @@ const{id, name, health,avatar_url,catchphrase, damage, armor,bot_class,created_a
 
 
   return (
-    <div>
+    
         <div className="bot-card">
-            <h2 style={{color:"firebrick"}}>Bot-Name: {name}</h2>
-            <img src={avatar_url} alt={catchphrase}/>
+            <div className="bot-name">
+              <h2 style={{color:"firebrick"}}>Bot-Name: {name}</h2>
+            </div>
+            <div className="bot-img">
+              <img src={avatar_url} alt={catchphrase}/>
+            </div>
+            <div>
             <h4>Bot Info:</h4>
             <span><strong style={{color: "grey"}}>Health:</strong> {health}</span>,  {""}
               <span><strong style={{color: "grey"}}>Damage:</strong> {damage}</span>, <br/>
               <span><strong style={{color: "grey"}}>Armor:</strong> {armor}</span>, {""}
               <span><strong style={{color: "grey"}}>Bot-Class:</strong> {bot_class}</span>, <br/>
               <span><strong style={{color: "grey"}}>Created-Info:</strong> {created_at}</span>, <br/>
-              <span><strong style={{color: "grey"}}>Update-Info:</strong> {updated_at}</span>, {""}
-
+              <span><strong style={{color: "grey"}}>Update-Info:</strong> {updated_at}</span> {""}
+          </div>
         </div>
         
-    </div>
+  
   )
 }
 

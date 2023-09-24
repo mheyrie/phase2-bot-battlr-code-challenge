@@ -4,11 +4,12 @@ import BotCollectionDatas from '../pages/BotCollectionDatas'
 function BotCollection({botsList, botsArmy}) {
   return (
     <div>
-        <h2>Bots collection:</h2>
+        <h2 style={{textAlign:'left', paddingLeft:"20px"}}>Bots collection:</h2>
         {botsList.map((bots)=> {
            return (
+            <div className="cards-display">
               <BotCollectionDatas key={bots.id} bots={bots}/>
-            )
+           </div> )
         
         })}
     </div>
