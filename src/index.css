@@ -13,23 +13,29 @@ code {
 }
 
 .bot-card{
-  border: 2px solid grey;
-  box-shadow: 0 0 4px grey;
-  width: 300px;
+  border: 1px solid grey;
+  box-shadow: 0 0 4px black;
+  width: 250px;
   margin: 20px;
   background-color: plum;
 }
 
 .bot-img img{
   width: 200px;
-  height: 200px;
+  
 }
 
 .cards-display{
-  width: 50%;
-  text-align: center;
-  margin-left: 10px;
+display: inline-grid;
+width: 17rem;
+text-align: center;
 }
-.cards-display > .bot-card{
-  display: inline-block;
+
+.bot-container{
+ max-width: 50%;
+}
+
+.army-container{
+  position: relative;
+  margin-left: 50%;
 }

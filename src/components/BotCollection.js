@@ -3,7 +3,7 @@ import BotCollectionDatas from '../pages/BotCollectionDatas'
 
 function BotCollection({botsList, botsArmy}) {
   return (
-    <div>
+    <div className="bot-container">
         <h2 style={{textAlign:'left', paddingLeft:"20px"}}>Bots collection:</h2>
         {botsList.map((bots)=> {
            return (

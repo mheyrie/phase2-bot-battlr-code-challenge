@@ -27,7 +27,7 @@ function addBot(id){
     <div className="App">
       <YourBotArmy botsList={botsList} botsArmy={botsArmy}/>
 
-      <BotCollection botsList={botsList} botsArmy={botsArmy} addBot={addBot} />   
+      <BotCollection botsList={botsList} />   
  
     </div>
   );

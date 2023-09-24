@@ -3,8 +3,8 @@ import BotCollectionDatas from '../pages/BotCollectionDatas'
 
 function YourBotArmy({botsArmy}) {
   return (
-    <div>
-      <h2>Bot Army</h2>
+    <div className="army-container">
+      <h2>Bot Army:</h2>
         {botsArmy.map(bot => {
           return (
             <BotCollectionDatas key={bot.id} bot={bot}/>
