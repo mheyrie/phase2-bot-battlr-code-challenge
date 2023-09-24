@@ -1,26 +1,28 @@
 import React, { useState } from 'react'
-import ToggleMode from './ToggleMode'
 
 
-function BotCollectionDatas({bot, addBot}) {
 
-const [isClicked, setIsClicked] = useState(false)
+function BotCollectionDatas({bots}) {
 
-function handleToggleMode(){
-    setIsClicked(!isClicked)
-}
+// const [isClicked, setIsClicked] = useState(false)
+const{id, name, health,avatar_url,catchphrase, damage, armor,bot_class,created_at,updated_at} = bots
+
 
   return (
     <div>
         <div className="bot-card">
-            <img src={bot.avatar_url} alt={bot.catchphrase}/>
-            <div>
-                <p>{bot.name}</p>
-                <button onClick={handleToggleMode}>View Bot Profile</button>
-                 <button>X</button>
-            </div>
+            <h2 style={{color:"firebrick"}}>Bot-Name: {name}</h2>
+            <img src={avatar_url} alt={catchphrase}/>
+            <h4>Bot Info:</h4>
+            <span><strong style={{color: "grey"}}>Health:</strong> {health}</span>,  {""}
+              <span><strong style={{color: "grey"}}>Damage:</strong> {damage}</span>, <br/>
+              <span><strong style={{color: "grey"}}>Armor:</strong> {armor}</span>, {""}
+              <span><strong style={{color: "grey"}}>Bot-Class:</strong> {bot_class}</span>, <br/>
+              <span><strong style={{color: "grey"}}>Created-Info:</strong> {created_at}</span>, <br/>
+              <span><strong style={{color: "grey"}}>Update-Info:</strong> {updated_at}</span>, {""}
+
         </div>
-        <ToggleMode isClicked={isClicked} bot={bot} handleToggleMode={handleToggleMode}/>
+        
     </div>
   )
 }
